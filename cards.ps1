@@ -8,9 +8,7 @@ $count = 7
 $hand1 = @()
 $hand2 = @()
 
-$Shuffle = Get-Random -InputObject $Deck -Count 52
-
-$Shuffle -join(",")
+$Shuffle = (Get-Random -InputObject $Deck -Count 52) -join(",")
 
 $Shuffle1 = $Shuffle
 
